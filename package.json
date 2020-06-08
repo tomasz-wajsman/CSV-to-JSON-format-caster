@@ -20,7 +20,8 @@
     "url": "https://github.com/tomasz-wajsman/csv-json-caster/issues"
   },
   "homepage": "https://github.com/tomasz-wajsman/csv-json-caster#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "assert": "^2.0.0",
     "jest": "^26.0.1"
   }
