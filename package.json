@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "npx jest ."
+    "test": "npx jest . --coverage"
   },
   "repository": {
     "type": "git",
