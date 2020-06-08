@@ -1,0 +1,27 @@
+{
+  "name": "json-csv-caster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "npx jest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasz-wajsman/csv-json-caster.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomasz-wajsman/csv-json-caster/issues"
+  },
+  "homepage": "https://github.com/tomasz-wajsman/csv-json-caster#readme",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "jest": "^26.0.1"
+  }
+}
