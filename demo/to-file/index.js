@@ -1,4 +1,4 @@
-const Caster = require('../../caster');
+const CsvJsonCaster = require('../../');
 const fs = require('fs');
 const readline = require('readline');
 
@@ -59,11 +59,11 @@ const main = args => {
         return 1;
       case 'json':
         // CSV to JSON
-        output = JSON.stringify(Caster.toJSON.convert(input, separator));
+        output = JSON.stringify(CsvJsonCaster.JSON.convert(input, separator));
         break;
       case 'csv':
         // JSON to CSV
-        output = Caster.toCSV.convert(JSON.parse(input), separator);
+        output = CsvJsonCaster.CSV.convert(JSON.parse(input), separator);
         break;
     }
     // write file contents

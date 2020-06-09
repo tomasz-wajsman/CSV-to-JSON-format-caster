@@ -15,7 +15,7 @@ const values = {
 describe('CSV data convert tests', () => {
   it('Parses various value types to appropriate JSON types', () => {
     for (const [key, value] of Object.entries(values)) {
-      assert.deepEqual(Caster.toJSON.parse(values[key]), value, `The value ${key} was not converted properly`);
+      assert.deepEqual(Caster.JSON.parse(values[key]), value, `The value ${key} was not converted properly`);
     }
   });
 });

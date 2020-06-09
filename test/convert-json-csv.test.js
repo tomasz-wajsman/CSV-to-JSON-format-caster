@@ -29,7 +29,7 @@ const CSVs = [
 describe('CSV to JSON converting', () => {
   test('Converts strings to JSON object', () => {
     mocks.forEach((mock, id) => {
-      assert.equal(JSON.stringify(Caster.toCSV.convert(mock, ',')), JSON.stringify(CSVs[id]), `The #${id + 1} mock was not converted properly`)
+      assert.equal(JSON.stringify(Caster.CSV.convert(mock, ',')), JSON.stringify(CSVs[id]), `The #${id + 1} mock was not converted properly`)
     });
   });
 });

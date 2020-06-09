@@ -41,20 +41,7 @@ const convert = (contents, separator = defaultSeparator) => {
         // check if value is not undefined
         if (parsed !== undefined) {
           // the value is defined
-          // check if the key can be split into parts
-          const key = String(keys[position]);
-          const keySplit = key.split('-');
-          const levels = keySplit.length;
           obj[keys[position]] = parsed;
-          /*
-          if (levels > 1) {
-            // add hierarchy
-            let currentLevel = 1;
-            obj[keys[position]] = parsed;
-          } else {
-            obj[keys[position]] = parsed;
-          }
-          */
         }
       });
       json.push(obj);

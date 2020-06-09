@@ -1,4 +1,4 @@
-const toJSON = require('./to-json');
-const toCSV = require('./to-csv');
+const JSON = require('./to-json');
+const CSV = require('./to-csv');
 
-module.exports = { toJSON, toCSV };
+module.exports = { JSON, CSV };

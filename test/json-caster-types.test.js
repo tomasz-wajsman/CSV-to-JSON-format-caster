@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Caster = require('../caster');
+const Caster = require('../');
 
 const values = {
   "null": "null",
@@ -15,7 +15,7 @@ const values = {
 describe('JSON data convert tests', () => {
   it('Parses various value types to appropriate CSV string types', () => {
     for (const [key, value] of Object.entries(values)) {
-      assert.deepEqual(Caster.toCSV.parse(values[key]), value, `The value ${key} was not converted properly`);
+      assert.deepEqual(Caster.CSV.parse(values[key]), value, `The value ${key} was not converted properly`);
     }
   });
 });
