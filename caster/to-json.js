@@ -1,4 +1,3 @@
-const digitSeparator = '.';
 const defaultSeparator = ',';
 
 const parse = value => {
@@ -15,18 +14,7 @@ const parse = value => {
       return true;
   }
   // get string
-  const str = String(value);
-  // numbers
-  let number;
-  // check if the number contains the dot, that means it is a float-point
-  if (str.includes(digitSeparator)) {
-    // float
-    number = Number.parseFloat(str, 10);
-  } else {
-    // int
-    number = Number.parseInt(str, 10); 
-  }
-  // check if the number was parsed correctly
+  let number = Number(String(value));
   if (Number.isNaN(number)) {
     return value;
   } else {
