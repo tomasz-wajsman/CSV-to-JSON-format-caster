@@ -20,8 +20,9 @@ The attached demo allows the developer to test this library. It loads the JSON o
 To use it, go to the */demo/to-file* directory and run:
 
     node ./index.js INPUT_FILE OUTPUT_FILE MODE DELIMITER
-    
-**INPUT_FILE** - file path you wish to process
-**OUTPUT_FILE** - file path that is created after the coversion ends
-**MODE** - data conversion mode, allowed values: **csv**, **json**
-**DELIMITER** - CSV file delimiter
+ - **INPUT_FILE** - file path you wish to process
+ - **OUTPUT_FILE** - file path that is created after the coversion ends
+ - **MODE** - data conversion mode, allowed values: **csv**, **json**
+ - **DELIMITER** - CSV file delimiter
+  
+   
